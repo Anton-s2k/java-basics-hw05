@@ -8,9 +8,7 @@ public class Zoo {
    * @param list list of birds of particular type.
    */
   public static void feed(List list) {
-    // TODO fix method declaration
     System.out.println("Feeding birds");
-    // TODO feed birds in the cycle
     list.forEach(Bird::eat);
   }
 
@@ -21,13 +19,9 @@ public class Zoo {
    * @param bird a new bird.
    */
   public static void acceptBird(List <Bird> list, Bird bird) {
-    // TODO fix method declaration
     System.out.println("Accepting a bird to a section");
-    // TODO check flying bird wings
     list.add(bird);
     list.forEach(System.out::println);
-
-      // TODO add a bird to the list and print it
   }
 
   /**
@@ -37,11 +31,8 @@ public class Zoo {
    * @param newBird bird to add.
    */
   public static void registerBird(List list, Bird newBird) {
-    // TODO fix method declaration
     list.add(newBird);
     list.forEach(bird->System.out.println(bird));
     System.out.println("Adding a bird to the birds list");
-    // TODO add a bird to list
-    // TODO print birds in the cycle
   }
 }
